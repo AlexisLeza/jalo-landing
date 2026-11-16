@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concrete Pumping in Miami-Dade & Broward | Jalo Concrete Pumping</title>
+<meta name="description" content="Boom pumps 28M to 63M and line pumps, dispatched 24/7 across Miami-Dade and Broward. 5.0 stars from 14 Google reviews. Rained out? No penalty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root { --red: #9A0000; --green: #CCFA00; --ink: #262626; --char: #1b1b1b; --paper: #f6f5f2; --line: #e2e0da; --muted: #5d5b57; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.5; }
+h1, h2, h3, .num { font-family: "Bebas Neue", Impact, sans-serif; font-weight: 400; letter-spacing: .5px; line-height: 1; margin: 0; }
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 22px; border-radius: 6px; font-weight: 800; text-decoration: none; font-size: 17px; border: 0; cursor: pointer; }
+.btn.call { background: var(--green); color: #111; }
+.btn.ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.6); }
+.btn.dark { background: var(--ink); color: #fff; }
+
+/* Top bar */
+.top { background: var(--char); color: #fff; position: sticky; top: 0; z-index: 10; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; }
+.mark { font-family: "Bebas Neue", sans-serif; font-size: 28px; letter-spacing: 1px; text-decoration: none; }
+.mark { display: flex; align-items: center; }
+.mark img { height: 40px; width: auto; display: block; }
+.top .btn { padding: 10px 16px; font-size: 15px; }
+
+/* Hero */
+.hero { position: relative; color: #fff; background: #111 url("img/hero.jpg") center/cover; }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,10,10,.92) 0%, rgba(10,10,10,.75) 55%, rgba(10,10,10,.35) 100%); }
+.hero .wrap { position: relative; padding: 70px 20px 40px; }
+.kicker { text-transform: uppercase; letter-spacing: 2px; font-size: 13px; font-weight: 800; color: var(--green); }
+.hero h1 { font-size: clamp(46px, 8vw, 88px); margin: 14px 0 18px; max-width: 900px; }
+.hero p.lead { font-size: 19px; max-width: 600px; color: #e9e9e9; margin: 0 0 26px; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.proof { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,.15); margin-top: 46px; border-radius: 8px; overflow: hidden; }
+.proof div { background: rgba(20,20,20,.85); padding: 16px 18px; }
+.proof .num { font-size: 40px; color: var(--green); }
+.proof small { display: block; color: #cfcfcf; font-size: 13px; }
+
+/* Sections */
+section { padding: 64px 0; }
+section h2 { font-size: clamp(38px, 5vw, 56px); margin-bottom: 14px; }
+.sub { color: var(--muted); max-width: 640px; font-size: 17px; margin: 0 0 30px; }
+
+.offer { background: var(--red); color: #fff; }
+.offer .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.offer h2 { font-size: clamp(52px, 7vw, 84px); }
+.offer p { font-size: 18px; margin: 0; color: #f3dede; }
+.offer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.offer li { background: rgba(0,0,0,.22); padding: 14px 16px; border-radius: 6px; font-weight: 600; }
+.offer li::before { content: "✓"; color: var(--green); font-weight: 800; margin-right: 10px; }
+
+.pumps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 24px; }
+.card h3 { font-size: 34px; margin-bottom: 6px; }
+.card .spec { font-family: "Bebas Neue", sans-serif; font-size: 22px; color: var(--red); margin-bottom: 10px; }
+.card p { margin: 0; color: var(--muted); }
+
+.jobs { background: var(--char); color: #fff; }
+.jobs .sub { color: #bbb; }
+.jobgrid { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 14px; }
+.job { position: relative; border-radius: 10px; overflow: hidden; min-height: 300px; background: #333 center/cover; }
+.job figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 16px; background: linear-gradient(transparent, rgba(0,0,0,.85)); font-size: 14px; }
+.job figcaption b { display: block; font-size: 17px; }
+.job.text { display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; background: #2c2c2c; }
+.job.text .num { font-size: 64px; color: var(--green); }
+figure { margin: 0; }
+
+.reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.review { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+.stars { color: #e5a400; letter-spacing: 2px; }
+.review q { font-size: 17px; quotes: "\201C" "\201D"; }
+.review cite { font-style: normal; color: var(--muted); font-size: 14px; margin-top: auto; }
+.clients { margin-top: 34px; padding: 20px 22px; border-left: 4px solid var(--red); background: #fff; border-radius: 0 8px 8px 0; }
+.clients b { display: block; margin-bottom: 4px; }
+
+.send { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: center; font-size: 17px; }
+.steps li::before { content: counter(s); font-family: "Bebas Neue", sans-serif; font-size: 28px; width: 44px; height: 44px; border-radius: 50%; background: var(--ink); color: var(--green); display: grid; place-items: center; }
+form { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 24px; display: grid; gap: 12px; }
+label { font-size: 14px; font-weight: 600; display: grid; gap: 6px; }
+input, select { font: inherit; padding: 12px; border: 1px solid #cfccc5; border-radius: 6px; width: 100%; background: #fff; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+form .btn { justify-content: center; width: 100%; }
+.fine { font-size: 13px; color: var(--muted); margin: 0; }
+
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; margin-bottom: 10px; }
+.faq summary { font-weight: 800; cursor: pointer; }
+.faq p { margin: 10px 0 0; color: var(--muted); }
+
+footer { background: #111; color: #bbb; padding: 40px 0 110px; font-size: 14px; }
+footer .wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+footer b { color: #fff; display: block; margin-bottom: 6px; }
+
+.bar { position: fixed; left: 0; right: 0; bottom: 0; background: var(--char); padding: 10px 16px; display: none; z-index: 20; }
+.bar .btn { width: 100%; justify-content: center; }
+
+@media (max-width: 860px) {
+  .proof { grid-template-columns: repeat(2, 1fr); }
+  .offer .wrap, .send { grid-template-columns: 1fr; }
+  .pumps, .reviews, .jobgrid, footer .wrap { grid-template-columns: 1fr; }
+  .hero .wrap { padding: 46px 16px 30px; }
+  .wrap { padding: 0 16px; }
+  .top .btn span { display: none; }
+  .bar { display: block; }
+  section { padding: 48px 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="mark" href="#"><img src="img/logo.png" alt="Jalo Concrete Pumping" width="137" height="48"></a>
+  <a class="btn call" href="tel:+17865607354">Call <span>(786) 560-7354</span></a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="kicker">Concrete pumping · Miami-Dade &amp; Broward · Dispatch 24/7</div>
+  <h1>The mixer can't reach? We can.</h1>
+  <p class="lead">Boom pumps from 28M to 63M and line pumps that push concrete hundreds of feet. Every pump arrives with a certified operator, the hose and full setup. Day pours, night pours, weekends.</p>
+  <div class="ctas">
+    <a class="btn call" href="tel:+17865607354">Call dispatch: (786) 560-7354</a>
+    <a class="btn ghost" href="#send">Send the address &amp; yards</a>
+  </div>
+  <div class="proof">
+    <div><span class="num">5.0 ★</span><small>14 Google reviews, all five stars</small></div>
+    <div><span class="num">24/7</span><small>Dispatch, nights and weekends</small></div>
+    <div><span class="num">45+</span><small>South Florida contractors served</small></div>
+    <div><span class="num">55</span><small>Pieces of equipment in the fleet</small></div>
+  </div>
+</div></div>
+
+<section class="offer"><div class="wrap">
+  <div>
+    <div class="kicker">Our rain-day policy</div>
+    <h2>Rained out? No penalty.</h2>
+    <p>If it's unsafe to pour, we reschedule. You don't pay for the weather.</p>
+  </div>
+  <ul>
+    <li>Certified operator, hose and setup with every pump</li>
+    <li>Driveways and lawns protected with outrigger pads and plywood</li>
+    <li>We pump it and we supply it: one call for the pump and the ready-mix</li>
+    <li>Insured · Hablamos español</li>
+  </ul>
+</div></section>
+
+<section id="pumps"><div class="wrap">
+  <h2>Pick your pump</h2>
+  <p class="sub">Not sure which one? Send us the address and the yards and we'll tell you.</p>
+  <div class="pumps">
+    <div class="card"><h3>Boom pumps</h3><div class="spec">28M to 63M</div><p>Slabs, tie beams, columns and decks, from a single-family house to a mid-rise. The boom places concrete where the crew needs it.</p></div>
+    <div class="card"><h3>Line pumps</h3><div class="spec">2", 3" and 4–5" hose</div><p>Block cells, backyards, pool decks and side yards: hundreds of feet of hose for the pours a mixer truck can't reach. 8 yards by wheelbarrow is about 50 trips. A line pump does it in about two hours.</p></div>
+    <div class="card"><h3>Pump + ready-mix</h3><div class="spec">One call</div><p>We supply the concrete too, batched to ASTM C-94. If concrete we supply fails within one year, we repair or replace it.</p></div>
+  </div>
+</div></section>
+
+<section class="jobs"><div class="wrap">
+  <h2>Jobs you know</h2>
+  <p class="sub">From the stands at Nu Stadium in Miami to a night pour at Fort Lauderdale airport.</p>
+  <div class="jobgrid">
+    <div class="job text">
+      <span class="num">Nu Stadium</span>
+      <p>We pumped concrete onto the stands at Nu Stadium, Miami. The reel of that pour has 15,757 plays on our Instagram.</p>
+      <a class="btn call" href="https://www.instagram.com/jaloconcretepumping_/" style="align-self:flex-start">Watch it on Instagram</a>
+    </div>
+    <figure class="job" style="background-image:url('img/night.jpg')"><figcaption><b>Night pour, FLL airport</b>16 Feb 2026</figcaption></figure>
+    <figure class="job" style="background-image:url('img/crew.jpg')"><figcaption><b>Slab day</b>Jalo crew placing and finishing</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <h2>5.0 stars. All 14 Google reviews.</h2>
+  <p class="sub">The thing reviewers mention most is punctuality and deadlines.</p>
+  <div class="reviews">
+    <div class="review"><div class="stars">★★★★★</div><q>They not only exceeded all of our expectations but also worked with professionalism, respect, and great attention to deadlines.</q><cite>Greeis Perdomo · Google · Oct 2025</cite></div>
+    <div class="review"><div class="stars">★★★★★</div><q>They're professional, punctual, and do everything with great attention to detail.</q><cite>Cristina Gonzalez · Local Guide · Oct 2025</cite></div>
+    <div class="review"><div class="stars">★★★★★</div><q>Cumplieron a la perfección con los plazos acordados.</q><cite>Maricela Frómeta · Google · Feb 2025 · "They met the agreed deadlines perfectly"</cite></div>
+  </div>
+  <div class="clients"><b>We've pumped for</b>C2S Construct, Corona Homes, NAG Structural, New Century Builders, Recon General Contractors, Coast Home Builders, Tidal Builders and 40+ more South Florida contractors.</div>
+</div></section>
+
+<section id="send" style="background:#fff"><div class="wrap send">
+  <div>
+    <h2>Send the address &amp; yards</h2>
+    <p class="sub">That's all dispatch needs to pick the pump. We answer 24/7.</p>
+    <ol class="steps">
+      <li>The job address</li>
+      <li>How many yards, and what you're pouring</li>
+      <li>The day and the start time</li>
+    </ol>
+    <p class="sub" style="margin-top:24px">Or call: <a href="tel:+17865607354"><b>(786) 560-7354</b></a></p>
+  </div>
+  <form id="f">
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Job address<input name="address" required autocomplete="street-address"></label>
+    <div class="row2">
+      <label>Yards<input name="yards" inputmode="decimal" placeholder="e.g. 12"></label>
+      <label>Pour date<input name="date" type="date"></label>
+    </div>
+    <label>What are you pouring?
+      <select name="what"><option>Slab</option><option>Tie beams / columns</option><option>Block cells</option><option>Driveway / patio / pool deck</option><option>Not sure</option></select>
+    </label>
+    <button class="btn call" type="submit">Text it to dispatch</button>
+    <p class="fine">Opens a text message to (786) 560-7354 with these details filled in.</p>
+  </form>
+</div></section>
+
+<section class="faq"><div class="wrap">
+  <h2>Questions</h2>
+  <details><summary>What if it rains on pour day?</summary><p>If it's unsafe to pour, we reschedule with no penalty.</p></details>
+  <details><summary>What comes with the pump?</summary><p>Every pump arrives with a certified operator, the hose and full setup.</p></details>
+  <details><summary>Will the truck damage my driveway or lawn?</summary><p>We put down outrigger pads and plywood to protect driveways and lawns.</p></details>
+  <details><summary>Do you pour at night or on weekends?</summary><p>Yes. Dispatch runs 24/7: day pours, night pours and weekends.</p></details>
+  <details><summary>Where do you work?</summary><p>Miami-Dade and Broward from our Miami Gardens yard, plus Palm Beach. Southwest Florida from our Fort Myers yard.</p></details>
+  <details><summary>¿Hablan español?</summary><p>Sí. Nuestro equipo y despacho hablan español e inglés.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <div><b>Jalo Concrete Pumping</b>JALO Concrete Services Corp. · Insured<br>10 years pumping concrete in South Florida</div>
+  <div><b>Miami dispatch</b><a href="tel:+17865607354">(786) 560-7354</a><br>16930 NW 17th Ave, Miami Gardens, FL 33056</div>
+  <div><b>Fort Myers dispatch</b><a href="tel:+17868280974">(786) 828-0974</a><br>2700 Evans Ave, Fort Myers, FL</div>
+</div></footer>
+
+<div class="bar"><a class="btn call" href="tel:+17865607354">Call dispatch 24/7: (786) 560-7354</a></div>
+
+<script>
+document.getElementById("f").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var d = new FormData(this);
+  var msg = "Pump request\nName: " + d.get("name") + "\nAddress: " + d.get("address") +
+    "\nYards: " + (d.get("yards") || "?") + "\nDate: " + (d.get("date") || "?") + "\nPouring: " + d.get("what");
+  window.location.href = "sms:+17865607354?&body=" + encodeURIComponent(msg);
+});
+</script>
+</body>
+</html>
